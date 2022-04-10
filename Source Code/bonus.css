@@ -1,0 +1,623 @@
+*
+{
+	box-sizing: border-box;
+ 	transition: all 0.3s ease-in-out;
+	font-family:arial,tahoma;
+}
+.start
+{
+	width: 100%;
+    height: 100%;
+    background-color: #52ad52;
+	text-align: center;
+}
+.start .gameName
+{font-weight: bold;
+    font-size: 50;
+    width: 80%;
+    top: 15%;
+    left: 50%;
+    position: absolute;
+    margin-left: -40%;
+}  
+.start .welcome
+{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+    color: darkred;
+    font-size: 30;
+}
+.start input[type="text"]
+{
+	position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 40%;
+    margin-left: -20%;
+    color: black;
+    font-size: 30;
+	border-radius: 3%;
+	border: none;
+}
+.start span.check
+{
+	width: 300px;
+    height: auto;
+    top: 73%;
+    left: 50%;
+    display: inline-block;
+    position: absolute;
+    margin-left: -150px;
+    color: red;
+}
+.start input[type="button"]
+{
+	position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 20%;
+    margin-left: -10%;
+    color: black	;
+    font-size: 30;
+	border-radius: 5px;
+	border: none;
+}
+.start input[type="button"]:hover
+{
+	border: 1px solid #000;
+	cursor: pointer;
+}
+.header
+{
+	text-align: center;
+    position: relative;
+    background-color: beige;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+.header .name
+{
+	display: inline-block;
+    width: 33%;
+    position: absolute;
+    left: 0%;
+}
+.header .timer
+{
+	width: 33%;
+    display: inline-block;
+    left: 33%;
+    position: absolute;
+}
+.header .score 
+{
+	display: inline-block;
+    width: 33%;
+    left: 66%;
+    position: absolute;
+}
+.level
+{
+	background-color: #56c367;
+	position: relative;
+    left: 35%;
+    transform: translateX(-50%);
+}
+.box
+{
+	width: 100px;
+    height: 100px;
+	position:absolute;
+}
+.boxInStart
+{
+	top: 10%;
+    left: 15%;
+}
+.box .container
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.box .background
+{
+	background-color: yellow;
+	width: 100%;
+	height: 100%;
+    position: absolute;
+    text-align: center;
+	z-index: 3
+}
+.box .leftup
+{
+	border: 1px solid #000;
+    transform: rotate(45deg);
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 40%;
+    background-color: lightgoldenrodyellow;
+    z-index: 4;
+}
+.box .leftdown
+{
+	border: 1px solid #000;
+    transform: rotate(-45deg);
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 40%;
+    background-color: lightgoldenrodyellow;
+    z-index: 4;
+}
+.box .up
+{
+	width: 60%;
+    height: 20%;
+    left: 20%;
+    background-color: yellow;
+    z-index: 5;
+    position: absolute;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+.box .down
+{
+	width: 60%;
+    height: 20%;
+    top: 80%;
+    left: 20%;
+    background-color: yellow;
+    z-index: 5;
+    position: absolute;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+.box .right
+{
+	width: 20%;
+    height: 60%;
+    top: 20%;
+    left: 80%;
+    background-color: yellow;
+    z-index: 5;
+    position: absolute;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.box .left
+{
+	width: 20%;
+    height: 60%;
+    top: 20%;
+    background-color: yellow;
+    z-index: 5;
+    position: absolute;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.box .upright
+{
+	width: 20%;
+    height: 20%;
+	left:80%;
+    background-color: yellow;
+    z-index: 5;
+    position: absolute;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.box .upleft
+{
+	width: 20%;
+    height: 20%;
+    background-color: yellow;
+    z-index: 5;
+    position: absolute;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.box .downright
+{
+	width: 20%;
+    height: 20%;
+	top:80%;
+	left:80%;
+    background-color: yellow;
+    z-index: 5;
+    position: absolute;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.box .downleft
+{
+	width: 20%;
+    height: 20%;
+	top:80%;
+    background-color: yellow;
+    z-index: 5;
+    position: absolute;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.rock 
+{
+	height: 100px;
+    width: 100px;
+	background-color: transparent;
+	position: absolute;
+}
+.rockInStart
+{
+	top: 10%;
+    left: 80%;
+}
+.rock .main
+{
+	width: 80%;
+	height: 80%;
+	top:10%;
+	left:10%;
+	border-radius: 50%;
+	background-color: #e3df73;
+	position: absolute;
+}
+.hole 
+{
+	text-align: center;
+	height: 100px;
+    width: 100px;
+	background-color: transparent;
+	position: absolute;
+}
+.holeInStart
+{
+	top: 60%;
+    left: 70%;
+}
+.hole .main
+{
+	width: 30%;
+	height: 30%;
+	top:35%;
+	left: 35%;
+	border-radius: 50%;
+	background-color: #f28c6e;
+	position: absolute
+}
+.wall-block
+{
+	width: 100px;
+	height: 100px;
+	background-color: #831e1e;
+	position: absolute;
+}
+.blockInStart
+{	
+	top: 70%;
+    left: 10%;
+}
+.wall-block .b1
+{
+	height: 25%;
+	width: 80%;
+	border: 1px solid #e68a8a;
+	border-left: none;
+	position: absolute;
+}
+.wall-block .b2
+{
+	height: 25%;
+	width: 20%;
+	left:80%;
+	border: 1px solid #e68a8a;
+	border-left: none;
+	border-right: none;
+	position: absolute;
+}
+.wall-block .b3
+{
+	top:25%;
+	width: 40%;
+	height: 25%;
+	border: 1px solid #e68a8a;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	position: absolute;
+}
+.wall-block .b4
+{
+	top:25%;
+	left: 40%;
+	height: 25%;
+	width: 60%;
+	border: 1px solid #e68a8a;
+	border-right: none;
+	border-top: none;
+	position: absolute
+}
+.wall-block .b5
+{
+	height: 25%;
+	width: 80%;
+	top: 50%;
+	border: 1px solid #e68a8a;
+	border-top: none;
+	border-left: none;
+	position: absolute;
+}
+.wall-block .b6
+{
+	height: 25%;
+	width: 20%;
+	top:50%;
+	left:80%;
+	border: 1px solid #e68a8a;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	position: absolute;
+}
+.wall-block .b7
+{
+	top:75%;
+	width: 40%;
+	height: 25%;
+	border: 1px solid #e68a8a;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	position: absolute;
+}
+.wall-block .b8
+{
+	top:75%;
+	left: 40%;
+	height: 25%;
+	width: 60%;
+	border: 1px solid #e68a8a;
+	border-right: none;
+	border-top: none;
+	position: absolute
+}
+.arrow-up {
+	width: 0; 
+	height: 0; 
+  	border-left: 30px solid transparent;
+  	border-right: 30px solid transparent;
+	border-bottom: 30px solid black;
+	position: absolute;
+	left: 475px;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent; 
+	border-top: 30px solid #f00;
+	position: absolute;
+	left: 475px;
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 30px solid green;
+	position: absolute;
+	left: 535px;
+}
+
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent; 
+	border-right:30px solid blue; 
+	position: absolute;
+	left: 445px;
+}
+.boxViewer
+{
+	position: absolute;
+    background-color: aliceblue;
+    left: 70%;
+    top: 70px;
+    height: 200px;
+    width: 29%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.holeViewer
+{
+	position: absolute;
+    background-color: aliceblue;
+    left: 70%;
+    top: 280px;
+    height: 200px;
+    width: 29%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.holeViewer div,.boxViewer div
+{
+	font-weight: bold;
+}
+.questionHolder	
+{
+	background-color: #dfe0e3;
+    font-size: 25;
+	border-radius: 5px;
+	border: 2px solid #000;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+	margin-left: -250px;
+	margin-top: -250px;
+	top: 50%;
+    left: 50%;
+}
+.questionHolder .container
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.questionHolder .container .yourScore
+{
+	top: 30%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40;
+    text-transform: capitalize;
+	color: #831e1e;
+}
+.questionHolder .container .yourScoreValue
+{
+	top: 60%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30;
+	color: #831e1e;
+}
+.questionHolder .container .question
+{
+	position: absolute;
+    top: 20%;
+    width: 100%;
+    color: black;
+	font-weight: bold;
+    text-align: center;
+}
+.questionHolder .container .question span
+{
+	color: #831e1e;
+	font-weight: normal;
+}
+.questionHolder .container .choice1
+{
+	position: absolute;
+    top: 35%;
+    width: auto;
+    left: 5%;
+    max-width: 40%;
+    font-size: 15px;
+	font-weight: bold;
+	background-color: #56c367;
+	color: #831e1e;
+    padding: 5px;
+	cursor: pointer;
+	min-width: 20%;
+    text-align: center;
+}
+.questionHolder .container .choice2
+{
+	position: absolute;
+    top: 35%;
+    width: auto;
+    left: 55%;
+    max-width: 40%;
+    font-size: 15;
+	font-weight: bold;
+    background-color: #56c367;
+    color: #831e1e;
+	padding: 5px;
+	cursor: pointer;
+    min-width: 20%;
+    text-align: center;
+}
+.questionHolder .container .choice3
+{
+	position: absolute;
+    top: 50%;
+    width: auto;
+    left: 5%;
+    max-width: 40%;
+    font-size: 15;
+	font-weight: bold;
+    background-color: #56c367;
+    color: #831e1e;
+	padding: 5px;
+	cursor: pointer;
+    min-width: 20%;
+    text-align: center;
+}
+.questionHolder .container .choice4
+{
+    position: absolute;
+    top: 50%;
+    width: auto;
+    left: 55%;
+    max-width: 40%;
+    font-size: 15;
+	font-weight: bold;
+    background-color: #56c367;
+    color: #831e1e;
+	padding: 5px;
+	cursor: pointer;
+    min-width: 20%;
+    text-align: center;
+}
+.questionHolder .container .choice:hover
+{
+	background-color: #a4e7a1;
+}
+.questionHolder .container .rightAnswer
+{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    font-size: 25px;
+	font-weight: bold;
+    height: 50px;
+    text-align: center;
+	color: green
+}
+.questionHolder .container .wrongAnswer
+{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    font-size: 25px;
+	font-weight: bold;
+    height: 50px;
+    text-align: center;
+	color: red;
+}
+.resetButton
+{
+	color: white;
+	font-weight: bold;
+	background-color: red;
+    width: auto;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    opacity: 0.7;
+    left: 600px;
+    
+}
+.resetButton:hover
+{
+	background-color: darkred;
+	opacity: 1;
+	cursor: pointer	;
+}

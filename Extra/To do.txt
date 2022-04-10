@@ -1,0 +1,72 @@
+1- connecting boxes to holes (delayed after putting info)
+2- changing box color and transitions smoothness (->)(delayed coloring)
+3- hover info (->)
+4- more levels (delayed)
+5- getting name screen (->)
+6- handling interface(delayed)
+7- scoring policy()
+8- timer (->)
+9- level question
+10- colors modification 
+11-coloring under hover
+12-character
+*******************
+1
+cs:code segment
+es:extra segment
+ss:stack segment
+ds:data segment 
+ip:instruction pointer
+sp:stack pointer
+si:source index
+di:destination index
+fr:flag register
+bp:base pointer
+*******************
+2
+CF (Carry Flag) - Set when there is a carry out, from d7 after an 8-bit operation, or d15 after a 16-bit operation.
+Used to detect errors in unsigned arithmetic operations.
+AF (Auxiliary Carry Flag) - If there is a carry from d3 to d4 of an operation, this bit is set; otherwise, it is cleared.
+Used by instructions that perform BCD (binary codeddecimal) arithmetic.
+PF (Parity Flag) -  After certain operations, the parityof the result's low-order byte is checked.
+If the byte has an even number of 1s, the parity flag is set to 1; otherwise, it is cleared.
+ZF (Zero Flag) - Set to 1 if the result of an arithmetic or logical operation is zero; otherwise, it is cleared.
+SF (Sign Flag) - Binary representation of signed numbers uses the most significant bit as the sign bit.
+After arithmetic or logic operations, the status of this signbit is copied into the SF, indicating the sign of the result.
+OF (Overflow Flag) - Set when the result of a signed number operation is too large, causing the high-orderbit to overflow into the sign bit.
+Used only to detect errors in signed arithmetic operations.
+A negative result out of positive operands (or vice versa)
+IF (Interrupt Enable Flag) - This bit is set or cleared to enable/disable only external maskable interrupt requests.
+DF (Direction Flag) - Used to control the direction of string operations.
+TF (Trap Flag) - When this flag is set it allows the program to single-step, meaning to execute one instruction at a time.
+Single-stepping is used for debugging purposes.
+******************
+3
+MOV AX, 1234H :Immediate addressing mode
+MOV AX,BX :Register addressing mode
+MOV AX,[200]:Direct addressing mode
+MOV AX,[BX]:Register indirect addressing mode (ONLY BX,SI or DI)
+MOV AX,[BX+3]:Based Relative addressing mode (ONLY BX or BP)
+MOV AX,[SI+3]:Indexed Relative addressing mode(ONLY SI or DI)
+MOV AX,[BX][SI]+3:Based Indexed addressing mode(ONLY 1 of BASED + 1 of INDEXED)
+******************
+4
+DB : 1 Byte 
+DW : 2 Bytes
+DD : 4 Bytes 
+DQ : 8 Bytes
+DT : 10 Bytes
+equ : 0 Bytes
+******************
+5
+
+
+
+
+	                           
+
+
+
+
+
+

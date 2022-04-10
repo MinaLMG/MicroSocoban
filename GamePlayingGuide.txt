@@ -1,0 +1,69 @@
+
+
+	First of all , after opening the html file you'll have a welcome screen which needs yor name as an input.
+
+	After that the game will start , the game consists of four levels.
+
+
+
+
+
+
+						Game explanation :
+
+The main goal of the traditional game is to get the boxes in the holes postions in any order to get through the next level .
+
+The rock moves when there is no block or boxes in front of it .
+
+The rock can move the box when no blocks or even another box in their way .
+
+Here we have the same concept but for every box there is only one suitable hole .
+
+To know the suitable hole we hover any box , there is a box in the top right which will show the box information or description .
+
+For example : in the first level the boxes has these info :"DD","DB","DW"..... ,the holes have these info : "1 Byte","2Bytes"....
+
+We then need to put the "DD" box in the "2 Bytes" hole .
+
+When you put the box in the right hole its background color will change into dark blue.
+
+If you move it again into any wrong position the background returns yellow.
+
+You can reset the level by clicking on "Reset current level" button.(time will not be reset to avoid cheating)
+
+You'll win the level when all boxes are in their right postions.
+
+After every level you'll get a question on what you have learnt in this level.
+
+
+
+
+						Game controls :
+
+ - you can move using mouse by clicking the arrows below every level grid
+
+ - you can move using W,A,S,D buttons
+
+ - you can move using up,right,down,left buttons
+
+
+
+
+						Grading Policy:
+
+you get points on three cases :
+
+ - solving the level (it has the greatest contribution)
+
+ - answering the pop-up questions
+
+ - the time left in each level , the faster your solve the more points you get(if the time reaches zero you'll complete the level without taking any points for time)
+
+
+
+						Game solutions:
+
+to get the solutions to check all features I have sollved the four levels in the video attached in this file. 
+
+
+

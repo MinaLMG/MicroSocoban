@@ -1,0 +1,11 @@
+The project idea is taken from the traditional socoban game.
+
+The levels are modified by me to serve the goal of the project .
+
+The idea is totally created by me.
+
+The codes are written by me totally from scratch using :
+-javascript for coding .
+-html and css for desiging the game objects.
+
+some external codes which were copied to my code will be mentioned in References.txt file .

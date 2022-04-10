@@ -1,0 +1,29 @@
+
+Bonus task
+The name and photo associated with your Google account will be recorded when you upload files and submit this form. Not mena.gerges00@eng-st.cu.edu.eg? Switch account
+Any files that are uploaded will be shared outside of the organization they belong to.
+* Required
+Your system *
+Credit Hours
+Two Semesters
+Your code *
+1180276
+Your full name *
+Mena Lateaf Mahrous
+Your game title *
+Micro Socoban
+Your game description *
+we'll use the microprocessors curriculum as hints and pathes to solve the traditional socoban and get through different levels
+You studied the content in lecture/ lectures number *
+1,2,3
+write a question that could be included in a microprocessor exam that a student could answer it if he/she played your game *
+which adressing mode depends only on (BX or BP) ?
+How to compile and execute your game *
+You should start from a fresh installed operating system and include all the required links to download all the required libraries and compilers
+opening the source code file then open bonus.html .. it's preferred to have a new version of Google Chrome to enjoy all features of css3
+Your source code + executable + game playing instructions + Screenshots of your game and a short video of game playing in a single .rar / .zip format named with your_code.rar like 1212121.rar or 9191919.rar. Note: all of your files collected by this form in a singe folder. I recognise the file of each one of you by the file name only. Meaning that wrong file name = non delivered file *
+Compressed Archive
+1180276-v1.zip
+Never submit passwords through Google Forms.
+This form was created inside of Faculty Of Engineering. Report Abuse
+Google Forms

@@ -1,0 +1,6 @@
+You'll need only a new version of google chrome browser so that you can enjoy all the features of the game.
+1-open the source code file.
+2-open the bonus.html file and enjoy playing :D.
+
+
+to get the rules of the game and movement mechanism and more info ,open the GamePlayingGuide.txt.
